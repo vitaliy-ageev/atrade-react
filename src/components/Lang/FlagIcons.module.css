@@ -1,0 +1,12 @@
+.button_svg {
+    width: 23px;
+    height: 23px;
+    border: 2px solid #dedede;
+    border-radius: 50%;
+    margin-top: -1px;
+    transition: all .1s linear;
+}
+
+.lang_button:hover .button_svg {
+    border: 2px solid #cccccc;
+}

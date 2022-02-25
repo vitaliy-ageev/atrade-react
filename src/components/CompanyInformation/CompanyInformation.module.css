@@ -1,0 +1,24 @@
+.company_information {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.company_information_inner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.company_information_text {
+    cursor:default;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #B1B1B1;
+    text-align: center;
+    transition: all .1s linear;
+    -webkit-text-size-adjust:100%;
+}

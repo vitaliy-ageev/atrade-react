@@ -1,0 +1,395 @@
+/*Open Sans Light*/
+@font-face {
+    font-family: "Open Sans";
+    src:url('/public/fonts/open_sans/regular/opensans-light.ttf');
+    font-style: normal;
+    font-weight: 300;
+    font-display: fallback;
+}
+
+/*Open Sans Light Italic*/
+@font-face {
+    font-family: "Open Sans";
+    src:url('/public/fonts/open_sans/regular/opensans-light-italic.ttf');
+    font-style: italic;
+    font-weight: 300;
+    font-display: fallback;
+}
+
+/*Open Sans Regular*/
+@font-face {
+    font-family: "Open Sans";
+    src:url('/public/fonts/open_sans/regular/opensans-regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+    font-display: fallback;
+}
+
+/*Open Sans Regular Italic*/
+@font-face {
+    font-family: "Open Sans";
+    src:url('/public/fonts/open_sans/regular/opensans-italic.ttf');
+    font-style: italic;
+    font-weight: 400;
+    font-display: fallback;
+}
+
+/*Open Sans Semi Bold*/
+@font-face {
+    font-family: "Open Sans";
+    src:url('/public/fonts/open_sans/semi_bold/opensans-semi-bold.ttf');
+    font-style: normal;
+    font-weight: 600;
+    font-display: fallback;
+}
+
+/*Open Sans Semi Bold Italic*/
+@font-face {
+    font-family: "Open Sans";
+    src:url('/public/fonts/open_sans/semi_bold/opensans-semi-bold-italic.ttf');
+    font-style: italic;
+    font-weight: 600;
+    font-display: fallback;
+}
+
+/*Open Sans Bold*/
+@font-face {
+    font-family: "Open Sans";
+    src:url('/public/fonts/open_sans/bold/opensans-bold.ttf');
+    font-style: normal;
+    font-weight: 700;
+    font-display: fallback;
+}
+
+/*Open Sans Bold Italic*/
+@font-face {
+    font-family: "Open Sans";
+    src:url('/public/fonts/open_sans/bold/opensans-bold-italic.ttf');
+    font-style: italic;
+    font-weight: 700;
+    font-display: fallback;
+}
+
+/*Open Sans Extra Bold*/
+@font-face {
+    font-family: "Open Sans";
+    src:url('/public/fonts/open_sans/extra_bold/opensans-extra-bold.ttf');
+    font-style: normal;
+    font-weight: 800;
+    font-display: fallback;
+}
+
+/*Open Sans Extra Bold Italic*/
+@font-face {
+    font-family: "Open Sans";
+    src:url('/public/fonts/open_sans/extra_bold/opensans-extra-bold-italic.ttf');
+    font-style: italic;
+    font-weight: 800;
+    font-display: fallback;
+}
+/*====================================================================================================================================*/
+/*Roboto Thin*/
+@font-face {
+    font-family: "Roboto";
+    src:url('/public/fonts/roboto/thin/roboto-thin.ttf');
+    font-style: normal;
+    font-weight: 100;
+    font-display: fallback;
+}
+
+/*Roboto Thin Italic*/
+@font-face {
+    font-family: "Roboto";
+    src:url('/public/fonts/roboto/thin/roboto-thin-italic.ttf');
+    font-style: italic;
+    font-weight: 100;
+    font-display: fallback;
+}
+
+/*Roboto Light*/
+@font-face {
+    font-family: "Roboto";
+    src:url('/public/fonts/roboto/light/roboto-light.ttf');
+    font-style: normal;
+    font-weight: 300;
+    font-display: fallback;
+}
+
+/*Roboto Light Italic*/
+@font-face {
+    font-family: "Roboto";
+    src:url('/public/fonts/roboto/light/roboto-light-italic.ttf');
+    font-style: italic;
+    font-weight: 300;
+    font-display: fallback;
+}
+
+/*Roboto Regular*/
+@font-face {
+    font-family: "Roboto";
+    src:url('/public/fonts/roboto/regular/roboto-regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+    font-display: fallback;
+}
+
+/*Roboto Regular Italic*/
+@font-face {
+    font-family: "Roboto";
+    src:url('/public/fonts/roboto/regular/roboto-italic.ttf');
+    font-style: italic;
+    font-weight: 400;
+    font-display: fallback;
+}
+
+/*Roboto Medium*/
+@font-face {
+    font-family: "Roboto";
+    src:url('/public/fonts/roboto/medium/roboto-medium.ttf');
+    font-style: normal;
+    font-weight: 500;
+    font-display: fallback;
+}
+
+/*Roboto Medium Italic*/
+@font-face {
+    font-family: "Roboto";
+    src:url('/public/fonts/roboto/medium/roboto-medium-italic.ttf');
+    font-style: italic;
+    font-weight: 500;
+    font-display: fallback;
+}
+
+/*Roboto Bold*/
+@font-face {
+    font-family: "Roboto";
+    src:url('/public/fonts/roboto/bold/roboto-bold.ttf');
+    font-style: normal;
+    font-weight: 700;
+    font-display: fallback;
+}
+
+/*Roboto Bold Italic*/
+@font-face {
+    font-family: "Roboto";
+    src:url('/public/fonts/roboto/bold/roboto-bold-italic.ttf');
+    font-style: italic;
+    font-weight: 700;
+    font-display: fallback;
+}
+
+/*Roboto Black*/
+@font-face {
+    font-family: "Roboto";
+    src:url('/public/fonts/roboto/black/roboto-black.ttf');
+    font-style: normal;
+    font-weight: 900;
+    font-display: fallback;
+}
+
+/*Roboto Black Italic*/
+@font-face {
+    font-family: "Roboto";
+    src:url('/public/fonts/roboto/black/roboto-black-italic.ttf');
+    font-style: italic;
+    font-weight: 900;
+    font-display: fallback;
+}
+/*====================================================================================================================================*/
+/*IBM Plex Serif Thin*/
+@font-face {
+    font-family: "IBM Plex Serif";
+    src:url('/public/fonts/ibm_plex_serif/thin/ibm-plex-serif-thin.ttf');
+    font-style: normal;
+    font-weight: 100;
+    font-display: fallback;
+}
+
+/*IBM Plex Serif Thin Italic*/
+@font-face {
+    font-family: "IBM Plex Serif";
+    src:url('/public/fonts/ibm_plex_serif/thin/ibm-plex-serif-thin-italic.ttf');
+    font-style: italic;
+    font-weight: 100;
+    font-display: fallback;
+}
+
+/*IBM Plex Serif Extra Light*/
+@font-face {
+    font-family: "IBM Plex Serif";
+    src:url('/public/fonts/ibm_plex_serif/extra_light/ibm-plex-serif-extra-light.ttf');
+    font-style: normal;
+    font-weight: 200;
+    font-display: fallback;
+}
+
+/*IBM Plex Serif Extra Light Italic*/
+@font-face {
+    font-family: "IBM Plex Serif";
+    src:url('/public/fonts/ibm_plex_serif/extra_light/ibm-plex-serif-extra-light-italic.ttf');
+    font-style: italic;
+    font-weight: 200;
+    font-display: fallback;
+}
+
+/*IBM Plex Serif Light*/
+@font-face {
+    font-family: "IBM Plex Serif";
+    src:url('/public/fonts/ibm_plex_serif/light/ibm-plex-serif-light.ttf');
+    font-style: normal;
+    font-weight: 300;
+    font-display: fallback;
+}
+
+/*IBM Plex Serif Light Italic*/
+@font-face {
+    font-family: "IBM Plex Serif";
+    src:url('/public/fonts/ibm_plex_serif/light/ibm-plex-serif-light-italic.ttf');
+    font-style: italic;
+    font-weight: 300;
+    font-display: fallback;
+}
+
+/*IBM Plex Serif Regular*/
+@font-face {
+    font-family: "IBM Plex Serif";
+    src:url('/public/fonts/ibm_plex_serif/regular/ibm-plex-serif-regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+    font-display: fallback;
+}
+
+/*IBM Plex Serif Regular Italic*/
+@font-face {
+    font-family: "IBM Plex Serif";
+    src:url('/public/fonts/ibm_plex_serif/regular/ibm-plex-serif-italic.ttf');
+    font-style: italic;
+    font-weight: 400;
+    font-display: fallback;
+}
+
+/*IBM Plex Serif Medium*/
+@font-face {
+    font-family: "IBM Plex Serif";
+    src:url('/public/fonts/ibm_plex_serif/medium/ibm-plex-serif-medium.ttf');
+    font-style: normal;
+    font-weight: 500;
+    font-display: fallback;
+}
+
+/*IBM Plex Serif Medium Italic*/
+@font-face {
+    font-family: "IBM Plex Serif";
+    src:url('/public/fonts/ibm_plex_serif/medium/ibm-plex-serif-medium-italic.ttf');
+    font-style: italic;
+    font-weight: 500;
+    font-display: fallback;
+}
+
+/*IBM Plex Serif Semi Bold*/
+@font-face {
+    font-family: "IBM Plex Serif";
+    src:url('/public/fonts/ibm_plex_serif/semi_bold/ibm-plex-serif-semi-bold.ttf');
+    font-style: normal;
+    font-weight: 600;
+    font-display: fallback;
+}
+
+/*IBM Plex Serif Semi Bold Italic*/
+@font-face {
+    font-family: "IBM Plex Serif";
+    src:url('/public/fonts/ibm_plex_serif/semi_bold/ibm-plex-serif-semi-bold-italic.ttf');
+    font-style: italic;
+    font-weight: 600;
+    font-display: fallback;
+}
+
+/*IBM Plex Serif Bold*/
+@font-face {
+    font-family: "IBM Plex Serif";
+    src:url('/public/fonts/ibm_plex_serif/bold/ibm-plex-serif-bold.ttf');
+    font-style: normal;
+    font-weight: 700;
+    font-display: fallback;
+}
+
+/*IBM Plex Serif Bold Italic*/
+@font-face {
+    font-family: "IBM Plex Serif";
+    src:url('/public/fonts/ibm_plex_serif/bold/ibm-plex-serif-bold-italic.ttf');
+    font-style: italic;
+    font-weight: 700;
+    font-display: fallback;
+}
+/*====================================================================================================================================*/
+/*Merriweather Light*/
+@font-face {
+    font-family: "Merriweather";
+    src:url('/public/fonts/merriweather/light/merriweather-light.ttf');
+    font-style: normal;
+    font-weight: 300;
+    font-display: fallback;
+}
+
+/*IBM Plex Serif Light Italic*/
+@font-face {
+    font-family: "Merriweather";
+    src:url('/public/fonts/merriweather/light/merriweather-light-italic.ttf');
+    font-style: italic;
+    font-weight: 300;
+    font-display: fallback;
+}
+
+/*Merriweather Regular*/
+@font-face {
+    font-family: "Merriweather";
+    src:url('/public/fonts/merriweather/regular/merriweather-regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+    font-display: fallback;
+}
+
+/*IBM Plex Serif Regular Italic*/
+@font-face {
+    font-family: "Merriweather";
+    src:url('/public/fonts/merriweather/regular/merriweather-italic.ttf');
+    font-style: italic;
+    font-weight: 400;
+    font-display: fallback;
+}
+
+/*Merriweather Bold*/
+@font-face {
+    font-family: "Merriweather";
+    src:url('/public/fonts/merriweather/bold/merriweather-bold.ttf');
+    font-style: normal;
+    font-weight: 700;
+    font-display: fallback;
+}
+
+/*IBM Plex Serif Bold Italic*/
+@font-face {
+    font-family: "Merriweather";
+    src:url('/public/fonts/merriweather/bold/merriweather-bold-italic.ttf');
+    font-style: italic;
+    font-weight: 700;
+    font-display: fallback;
+}
+
+/*Merriweather Black*/
+@font-face {
+    font-family: "Merriweather";
+    src:url('/public/fonts/merriweather/black/merriweather-black.ttf');
+    font-style: normal;
+    font-weight: 900;
+    font-display: fallback;
+}
+
+/*IBM Plex Serif Black Italic*/
+@font-face {
+    font-family: "Merriweather";
+    src:url('/public/fonts/merriweather/black/merriweather-black-italic.ttf');
+    font-style: italic;
+    font-weight: 900;
+    font-display: fallback;
+}
