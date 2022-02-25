@@ -1,0 +1,24 @@
+.lang_button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.lang_button_name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #86888B;
+    margin-right: 10px;
+    text-decoration: none;
+    background: none;
+    outline: none;
+    transition: all .1s linear;
+}
+
+.lang_button_icon {
+    width: 20px;
+    height: 20px;
+}

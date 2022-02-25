@@ -3,9 +3,7 @@ import classes from './Name.module.css';
 
 const Name = (props) => {
     return (
-        <svg className={classes.name} version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg"
-             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             viewBox="0 0 892.8 204" style="enable-background:new 0 0 892.8 204;" xml:space="preserve">
+        <svg className={classes.name} version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 892.8 204" >
             <style type="text/css">
                 {`.st0{${props.st0}}`}
             </style>

@@ -1,0 +1,8 @@
+.icon {
+    cursor: pointer;
+    width: 27px;
+    height:27px;
+    fill: #302213;
+    transition: all .1s linear;
+    transform: rotate(270deg);
+}

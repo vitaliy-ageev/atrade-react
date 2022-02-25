@@ -1,0 +1,13 @@
+.footer {
+    width: 100%;
+    z-index: 60000;
+    overflow: hidden;
+}
+
+.footer_inner {
+    width: 100%;
+    background: #F2F2F2;
+    padding-top: 54px;
+    padding-bottom: 20px;
+    z-index: 60000;
+}

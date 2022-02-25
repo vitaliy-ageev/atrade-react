@@ -1,0 +1,8 @@
+.social_link {
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.social_link:last-child {
+    margin-right: 0;
+}

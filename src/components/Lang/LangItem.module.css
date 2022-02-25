@@ -1,0 +1,45 @@
+.lang_list_item {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f1f1f1;
+    padding: 10px 20px 10px 20px;
+    transition: all .1s linear;
+}
+
+.lang_list_item:last-child {
+    border-bottom: none;
+}
+
+.lang_list_item:hover {
+    background: #f1f1f1;
+}
+
+.lang_list_item_name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #86888B;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: all .1s linear;
+}
+
+.lang_list_item_icon {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.lang_list_item_svg {
+    width: 23px;
+    height: 23px;
+    border: 2px solid #cccccc;
+    border-radius: 50%;
+    margin-top: -2px;
+    transition: all .1s linear;
+}

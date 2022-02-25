@@ -1,0 +1,13 @@
+.lang {
+    cursor: pointer;
+    display: block;
+    margin-right: 50px;
+    position: relative;
+}
+
+.lang_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}

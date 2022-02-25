@@ -1,16 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import classes from './Header.module.css';
 import Logotype from "../../components/Logotype/Logotype";
+import NavBar from "../../components/NavBar/NavBar";
+import Lang from "../../components/Lang/Lang";
 
-const Header = (props) => {
+const Header = ({visible, setVisible, ...props}) => {
+
     return (
-        <div className={classes.header}>
+        <div {...props} className={classes.header}>
             <div className="container">
                 <div className={classes.header_inner}>
-                <Logotype />
-                {/*    Header Navigation */}
-                {/*    Language Selection*/}
-
+                    <Logotype />
+                    <NavBar />
+                    <Lang visible={visible} setVisible={setVisible} />
                 </div>
             </div>
         </div>

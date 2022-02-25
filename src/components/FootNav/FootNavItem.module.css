@@ -1,0 +1,18 @@
+.footer_nav_link {
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #AAAAAA;
+    transition: all .1s linear;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.footer_nav_link:last-child {
+    margin-right: 0;
+}
+
+.footer_nav_link:hover {
+    color: #494949;
+}

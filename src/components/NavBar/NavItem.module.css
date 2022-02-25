@@ -1,0 +1,26 @@
+.navigation_link {
+    margin-right: 20px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #86888B;
+    text-decoration: none;
+    background: none;
+    outline: none;
+    transition: all .1s linear;
+}
+
+.navigation_link:last-child {
+    margin-right: 0;
+}
+
+.active {
+    cursor: default;
+    color: #111;
+}
+
+.navigation_link:not(.active):hover {
+    color: #4a4a4a;
+}

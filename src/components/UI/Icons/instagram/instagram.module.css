@@ -1,0 +1,11 @@
+.instagram {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    fill:#AAAAAA;
+    transition: all .1s linear;
+}
+
+.instagram:hover {
+    fill: #494949;
+}

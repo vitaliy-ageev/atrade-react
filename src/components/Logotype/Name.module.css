@@ -1,0 +1,9 @@
+.name {
+    cursor: pointer;
+    width: 100px;
+    margin-top: -2px;
+    margin-left: 5px;
+    height: auto;
+    fill: #302213;
+    transition: all .1s linear;
+}

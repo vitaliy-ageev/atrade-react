@@ -1,4 +1,4 @@
-.button_svg {
+.flags_icon {
     width: 23px;
     height: 23px;
     border: 2px solid #dedede;
@@ -7,6 +7,9 @@
     transition: all .1s linear;
 }
 
-.lang_button:hover .button_svg {
-    border: 2px solid #cccccc;
+.flags_icon.active {
+    width: 203px;
+    height: 203px;
+    /*border: 2px solid #cccccc;*/
+    border: 5px solid #000;
 }

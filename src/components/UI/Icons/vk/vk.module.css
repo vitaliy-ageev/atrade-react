@@ -1,0 +1,10 @@
+.vkontakte {
+    width: 32px;
+    height: 32px;
+    fill: #AAAAAA;
+    transition: all .1s linear;
+}
+
+.vkontakte:hover {
+    fill: #494949;
+}
