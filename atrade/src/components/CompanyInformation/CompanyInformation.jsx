@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './CompanyInformation.module.css';
 
-const CompanyInformation = ({companyInformation, ...props}) => {
+const CompanyInformation = ({ companyInformation, ...props }) => {
 
     return (
         <div className={classes.company_information}>
