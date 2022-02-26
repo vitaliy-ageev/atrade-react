@@ -12,6 +12,7 @@ function App() {
     const [visible, setVisible] = useState(false);
     const [onChangeLang, setOnChangeLang] = useState(true);
     window.addEventListener('scroll', () => setVisible(false));
+    window.addEventListener('beforeunload', () => window.scrollTo(0,0));
 
     const [items, setItems] = useState([]);
     const [companyInformation, setCompanyInformation] = useState([]);

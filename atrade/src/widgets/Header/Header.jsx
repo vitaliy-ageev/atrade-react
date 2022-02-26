@@ -7,7 +7,7 @@ import Lang from "../../components/Lang/Lang";
 const Header = ({visible, setVisible, ...props}) => {
 
     return (
-        <div {...props} className={classes.header}>
+        <div {...props} className={classes.header} id="header">
             <div className="container">
                 <div className={classes.header_inner}>
                     <Logotype />

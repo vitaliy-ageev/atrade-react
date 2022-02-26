@@ -14,7 +14,8 @@ const TradingIdeas = (props) => {
             id: "1",
             curr_id: "1",
             name: "EUR/USD",
-            type: "Повышение",
+            type_rus: "Покупка",
+            type_eng: "Buy",
             type_id: "1",
             img: "EUR/eur.svg",
             svg_path: "0,120 28,125  56, 128 84,119 113,105 141,110 169,95 197,100 225,105 253,55  282,45 310,60 338,65 338",
@@ -42,7 +43,8 @@ const TradingIdeas = (props) => {
             id: "2",
             curr_id: "2",
             name: "AUD/USD",
-            type: "Понижение",
+            type_rus: "Продажа",
+            type_eng: "Sell",
             type_id: "2",
             img: "EUR/eur.svg",
             svg_path: "0,100 28,108  56,100 84,103 113,112 141,118 169,85 197,80 225,110 253,68  282,83 310,96  338,90 338",
@@ -70,7 +72,8 @@ const TradingIdeas = (props) => {
             id: "3",
             curr_id: "3",
             name: "EUR/USD",
-            type: "Повышение",
+            type_rus: "Покупка",
+            type_eng: "Buy",
             type_id: "1",
             img: "EUR/eur.svg",
             svg_path: "0,120 28,125  56, 128 84,119 113,105 141,110 169,95 197,100 225,105 253,55  282,45 310,60 338,65 338",
@@ -98,7 +101,8 @@ const TradingIdeas = (props) => {
             id: "4",
             curr_id: "4",
             name: "GBP/USD",
-            type: "Понижение",
+            type_rus: "Продажа",
+            type_eng: "Sell",
             type_id: "2",
             img: "EUR/eur.svg",
             svg_path: "0,115 28,115  56,125 84,120 113,122 141,123 169,120 197,100 225,110 253,80  282,85 310,50  338,60 338",
@@ -126,7 +130,8 @@ const TradingIdeas = (props) => {
             id: "5",
             curr_id: "4",
             name: "GBP/USD",
-            type: "Понижение",
+            type_rus: "Продажа",
+            type_eng: "Sell",
             type_id: "2",
             img: "EUR/eur.svg",
             svg_path: "0,115 28,115  56,125 84,120 113,122 141,123 169,120 197,100 225,110 253,80  282,85 310,50  338,60 338",
@@ -154,7 +159,8 @@ const TradingIdeas = (props) => {
             id: "6",
             curr_id: "4",
             name: "GBP/USD",
-            type: "Повышение",
+            type_rus: "Покупка",
+            type_eng: "Buy",
             type_id: "1",
             img: "EUR/eur.svg",
             svg_path: "0,115 28,115  56,125 84,120 113,122 141,123 169,120 197,100 225,110 253,80  282,85 310,50  338,60 338",
@@ -182,7 +188,8 @@ const TradingIdeas = (props) => {
             id: "7",
             curr_id: "4",
             name: "GBP/USD",
-            type: "Повышение",
+            type_rus: "Покупка",
+            type_eng: "Buy",
             type_id: "1",
             img: "EUR/eur.svg",
             svg_path: "0,115 28,115  56,125 84,120 113,122 141,123 169,120 197,100 225,110 253,80  282,85 310,50  338,60 338",
@@ -210,7 +217,8 @@ const TradingIdeas = (props) => {
             id: "8",
             curr_id: "4",
             name: "GBP/USD",
-            type: "Повышение",
+            type_rus: "Покупка",
+            type_eng: "Buy",
             type_id: "1",
             img: "EUR/eur.svg",
             svg_path: "0,115 28,115  56,125 84,120 113,122 141,123 169,120 197,100 225,110 253,80  282,85 310,50  338,60 338",
@@ -238,7 +246,8 @@ const TradingIdeas = (props) => {
             id: "9",
             curr_id: "4",
             name: "GBP/USD",
-            type: "Повышение",
+            type_rus: "Покупка",
+            type_eng: "Buy",
             type_id: "1",
             img: "EUR/eur.svg",
             svg_path: "0,115 28,115  56,125 84,120 113,122 141,123 169,120 197,100 225,110 253,80  282,85 310,50  338,60 338",
@@ -266,7 +275,8 @@ const TradingIdeas = (props) => {
             id: "10",
             curr_id: "4",
             name: "GBP/USD",
-            type: "Повышение",
+            type_rus: "Покупка",
+            type_eng: "Buy",
             type_id: "1",
             img: "EUR/eur.svg",
             svg_path: "0,115 28,115  56,125 84,120 113,122 141,123 169,120 197,100 225,110 253,80  282,85 310,50  338,60 338",
@@ -294,7 +304,8 @@ const TradingIdeas = (props) => {
             id: "12",
             curr_id: "4",
             name: "GBP/USD",
-            type: "Повышение",
+            type_rus: "Покупка",
+            type_eng: "Buy",
             type_id: "1",
             img: "EUR/eur.svg",
             svg_path: "0,115 28,115  56,125 84,120 113,122 141,123 169,120 197,100 225,110 253,80  282,85 310,50  338,60 338",
@@ -331,10 +342,10 @@ const TradingIdeas = (props) => {
     return (
         <div className={classes.ideas}>
             <div className={classes.ideas_inner}>
-                {(day === 6 || day === 0) && <TradingNotification />}
-                {(day !== 6 && day !== 0) && <Carousel settings={itemRef} widthItem={299} speed="0.35s ease" />}
-                {(day !== 6 && day !== 0) && <TradingIdeasItem items={items} ref={itemRef} />}
-                {(day === 6 || day === 0) && <IdeasItemStub items={itemStub} />}
+                {(day === 1 || day === 1) && <TradingNotification />}
+                {(day !== 1 && day !== 1) && <Carousel settings={itemRef} widthItem={299} speed="0.35s ease" />}
+                {(day !== 1 && day !== 1) && <TradingIdeasItem items={items} ref={itemRef} />}
+                {(day === 1 || day === 1) && <IdeasItemStub items={itemStub} />}
             </div>
         </div>
     );
