@@ -1,6 +1,5 @@
 import React from 'react';
 import classes from "./Main.module.css";
-import MainTitle from "../../components/UI/MainTitle/MainTitle";
 
 const Main = ({children, ...props}) => {
     return (

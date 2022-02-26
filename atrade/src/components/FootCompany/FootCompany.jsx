@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import classes from './FootCompany.module.css';
 import FootCompanyName from "./FootCompanyName";
 import FootLang from "./FootLang";

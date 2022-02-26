@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import classes from './Lang.module.css'
 import LangButton from "./LangButton";
 import LangList from "./LangList";

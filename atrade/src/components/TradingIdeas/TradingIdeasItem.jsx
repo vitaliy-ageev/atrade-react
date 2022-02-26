@@ -3,12 +3,12 @@ import classes from "../TradingIdeas/TradingIdeasItem.module.css";
 import EUR from "../../img/base/currency/svg/EUR/eur.svg";
 import IdeaItemChart from '../TradingIdeas/IdeaItemChart';
 
-const TradingIdeasItem = ({ items }) => {
+const TradingIdeasItem = React.forwardRef(({ items }, ref) => {
 
     return (
-        <>
+        <div className={classes.ideas_carousel} >
             {items.map(item =>
-                <div className={classes.ideas_item}>
+                <div ref={ref} key={item.id} className={classes.ideas_item} >
                     <div className={classes.ideas_item_inner} >
                         {/* Просмтрено */}
                         {/* Активный */}
@@ -30,8 +30,8 @@ const TradingIdeasItem = ({ items }) => {
                     </div>
                 </div>
             )}
-        </>
+        </div>
     )
-}
+})
 
 export default TradingIdeasItem

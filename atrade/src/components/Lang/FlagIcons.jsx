@@ -27,7 +27,7 @@ const FlagIcons = ({hover, setHover, listStyle, ...props}) => {
             };
         }
 
-        if (props.icon == "Rus") {
+        if (props.icon === "Rus") {
             return (
                 <svg style={rootStyle} className={classes.flags_icon} xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 473.68 473.68">
                     <style>{`.crl-1{${cFFF}} .pt-1{${c2B4}} .pt-2{${cEFE}} .pt-3{${cE63}} .pt-4{${c375}} .pt-5{${cEFE}} .pt-6{${cE73}}`}</style>
@@ -70,7 +70,7 @@ const FlagIcons = ({hover, setHover, listStyle, ...props}) => {
                     </g>
                 </svg>
             )
-        } else if (props.icon == "Eng") {
+        } else if (props.icon === "Eng") {
             return (
                 <svg style={rootStyle} className={classes.flags_icon} xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 473.68 473.68">
                     <style>{`.c293{${c293}} .cFFF{${cFFF}} .cD32{${cD32}} .c252{${c252}} .cE7E{${cE7E}} .cD71{${cD71}} .cE51{${cE51}}`}</style>

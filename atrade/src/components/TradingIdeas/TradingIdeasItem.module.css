@@ -1,6 +1,17 @@
+.ideas_carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: relative;
+    transform: translate3d(0,0,0);
+    transition: transform 0.35s ease;
+}
+
 .ideas_item {
     cursor: pointer;
-    width: 24%;
+    width: 284px;
     background: #F7F7F7;
     background: #FAFAFA;
     border-radius: 4px;
@@ -10,6 +21,7 @@
     overflow: hidden;
     text-decoration: none;
     position: relative;
+    margin-right: 15px;
 }
 
 .ideas_item:first-child {
@@ -21,7 +33,7 @@
     margin-right: 0;
 }
 
-.ideas_item.hover {
+.ideas_item:hover {
     transform: translateY(-5px);
     background: #f8f8f8;
 }

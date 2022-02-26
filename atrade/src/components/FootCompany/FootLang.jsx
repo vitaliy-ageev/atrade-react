@@ -1,6 +1,5 @@
-import React, { useEffect, useState, useContext } from 'react';
+import React, { useEffect, useState } from 'react';
 import classes from './FootLang.module.css';
-import { LangContext } from "../../context/LangContext"
 
 const FootLang = () => {
     const lang = localStorage.getItem('lang');

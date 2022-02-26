@@ -1,15 +1,18 @@
 .ideas {
-    width: 100%;
     display: block;
-    margin-top: 20px;
     position: relative;
+    margin-top: 20px;
+    z-index: 100;
+
 }
 
 .ideas_inner {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    overflow: hidden;
 }
+

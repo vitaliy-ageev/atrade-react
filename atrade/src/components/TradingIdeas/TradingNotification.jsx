@@ -14,11 +14,11 @@ const TradingNotification = ({ ...props }) => {
             <div className={classes.notification_inner}>
                 <div className={classes.notification_text}>
                     {notification.text}
-                    <a href={notification.path} className={classes.notification__lt} target="_blank" tabIndex="-2">
+                    <a href={notification.path} className={classes.notification__lt} target="_blank" tabIndex="-2" rel="noreferrer">
                         {' ' + notification.social}
                     </a>
                 </div>
-                <a href={notification.path} className={classes.notification_link} target="_blank" tabIndex="-2">
+                <a href={notification.path} className={classes.notification_link} target="_blank" tabIndex="-2" rel="noreferrer">
                     {notification.button}
                 </a>
             </div>

@@ -3,7 +3,6 @@ import Header from "../widgets/Header/Header";
 import Main from "../widgets/Main/Main";
 import Footer from "../widgets/Footer/Footer";
 import MainTitle from "../components/UI/MainTitle/MainTitle";
-import SubNavigation from "../components/UI/SubNavigation/SubNavigation";
 import { LangContext } from '../context/LangContext';
 import { TITLE } from "../utils/title";
 

@@ -6,7 +6,7 @@ const SocialNetworksItem = ({items, ...props}) => {
     return (
         <>
             {items.map(item =>
-                <a key={item.id} href={item.link} className={classes.social_link} target="_blank">
+                <a key={item.id} href={item.link} className={classes.social_link} target="_blank" rel="noreferrer">
                     <Icons icon={item.icon} />
                 </a>
             )}

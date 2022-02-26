@@ -45,6 +45,7 @@ const Icons = ({icon, setVkStyle, setVkBigStyle, setTgStyle, setInstStyle}) => {
             return <Telegram tgStyle={tgStyle} />
         case "Instagram":
             return <Instagram tgStyle={instStyle} />
+        default: <></>
     }
 
     return (

@@ -2,8 +2,13 @@ import React from 'react';
 import classes from './TradingIdeas.module.css';
 import TradingNotification from '../TradingIdeas/TradingNotification';
 import TradingIdeasItem from "../TradingIdeas/TradingIdeasItem";
+import Carousel from '../UI/Carousel/Carousel';
+import IdeasItemStub from './IdeasItemStub';
 
 const TradingIdeas = (props) => {
+    const itemRef = React.useRef();
+    const day = new Date().getDay();
+
     const items = [
         {
             id: "1",
@@ -116,15 +121,220 @@ const TradingIdeas = (props) => {
             full_date: "",
             year: "",
         },
+
+        {
+            id: "5",
+            curr_id: "4",
+            name: "GBP/USD",
+            type: "Понижение",
+            type_id: "2",
+            img: "EUR/eur.svg",
+            svg_path: "0,115 28,115  56,125 84,120 113,122 141,123 169,120 197,100 225,110 253,80  282,85 310,50  338,60 338",
+            active_status: "1",
+            work_status: "",
+            close_status: "",
+            cancel_status: "",
+            result_plus: "",
+            result_minus: "",
+            screen: "",
+            scree_text: "",
+            price: "",
+            take_profit: "",
+            stop_loss: "",
+            risk: "",
+            title: "",
+            text: "",
+            preview_text: "",
+            date: "",
+            full_date: "",
+            year: "",
+        },
+
+        {
+            id: "6",
+            curr_id: "4",
+            name: "GBP/USD",
+            type: "Повышение",
+            type_id: "1",
+            img: "EUR/eur.svg",
+            svg_path: "0,115 28,115  56,125 84,120 113,122 141,123 169,120 197,100 225,110 253,80  282,85 310,50  338,60 338",
+            active_status: "1",
+            work_status: "",
+            close_status: "",
+            cancel_status: "",
+            result_plus: "",
+            result_minus: "",
+            screen: "",
+            scree_text: "",
+            price: "",
+            take_profit: "",
+            stop_loss: "",
+            risk: "",
+            title: "",
+            text: "",
+            preview_text: "",
+            date: "",
+            full_date: "",
+            year: "",
+        },
+
+        {
+            id: "7",
+            curr_id: "4",
+            name: "GBP/USD",
+            type: "Повышение",
+            type_id: "1",
+            img: "EUR/eur.svg",
+            svg_path: "0,115 28,115  56,125 84,120 113,122 141,123 169,120 197,100 225,110 253,80  282,85 310,50  338,60 338",
+            active_status: "1",
+            work_status: "",
+            close_status: "",
+            cancel_status: "",
+            result_plus: "",
+            result_minus: "",
+            screen: "",
+            scree_text: "",
+            price: "",
+            take_profit: "",
+            stop_loss: "",
+            risk: "",
+            title: "",
+            text: "",
+            preview_text: "",
+            date: "",
+            full_date: "",
+            year: "",
+        },
+
+        {
+            id: "8",
+            curr_id: "4",
+            name: "GBP/USD",
+            type: "Повышение",
+            type_id: "1",
+            img: "EUR/eur.svg",
+            svg_path: "0,115 28,115  56,125 84,120 113,122 141,123 169,120 197,100 225,110 253,80  282,85 310,50  338,60 338",
+            active_status: "1",
+            work_status: "",
+            close_status: "",
+            cancel_status: "",
+            result_plus: "",
+            result_minus: "",
+            screen: "",
+            scree_text: "",
+            price: "",
+            take_profit: "",
+            stop_loss: "",
+            risk: "",
+            title: "",
+            text: "",
+            preview_text: "",
+            date: "",
+            full_date: "",
+            year: "",
+        },
+
+        {
+            id: "9",
+            curr_id: "4",
+            name: "GBP/USD",
+            type: "Повышение",
+            type_id: "1",
+            img: "EUR/eur.svg",
+            svg_path: "0,115 28,115  56,125 84,120 113,122 141,123 169,120 197,100 225,110 253,80  282,85 310,50  338,60 338",
+            active_status: "1",
+            work_status: "",
+            close_status: "",
+            cancel_status: "",
+            result_plus: "",
+            result_minus: "",
+            screen: "",
+            scree_text: "",
+            price: "",
+            take_profit: "",
+            stop_loss: "",
+            risk: "",
+            title: "",
+            text: "",
+            preview_text: "",
+            date: "",
+            full_date: "",
+            year: "",
+        },
+
+        {
+            id: "10",
+            curr_id: "4",
+            name: "GBP/USD",
+            type: "Повышение",
+            type_id: "1",
+            img: "EUR/eur.svg",
+            svg_path: "0,115 28,115  56,125 84,120 113,122 141,123 169,120 197,100 225,110 253,80  282,85 310,50  338,60 338",
+            active_status: "1",
+            work_status: "",
+            close_status: "",
+            cancel_status: "",
+            result_plus: "",
+            result_minus: "",
+            screen: "",
+            scree_text: "",
+            price: "",
+            take_profit: "",
+            stop_loss: "",
+            risk: "",
+            title: "",
+            text: "",
+            preview_text: "",
+            date: "",
+            full_date: "",
+            year: "",
+        },
+
+        {
+            id: "12",
+            curr_id: "4",
+            name: "GBP/USD",
+            type: "Повышение",
+            type_id: "1",
+            img: "EUR/eur.svg",
+            svg_path: "0,115 28,115  56,125 84,120 113,122 141,123 169,120 197,100 225,110 253,80  282,85 310,50  338,60 338",
+            active_status: "1",
+            work_status: "",
+            close_status: "",
+            cancel_status: "",
+            result_plus: "",
+            result_minus: "",
+            screen: "",
+            scree_text: "",
+            price: "",
+            take_profit: "",
+            stop_loss: "",
+            risk: "",
+            title: "",
+            text: "",
+            preview_text: "",
+            date: "",
+            full_date: "",
+            year: "",
+        },
+
+
     ];
+
+    const itemStub = [
+        { id: "1", name: "Заглушка 1" },
+        { id: "2", name: "Заглушка 2" },
+        { id: "3", name: "Заглушка 3" },
+        { id: "4", name: "Заглушка 4" },
+    ]
 
     return (
         <div className={classes.ideas}>
             <div className={classes.ideas_inner}>
-                <TradingNotification />
-                <TradingIdeasItem items={items} />
-                {/* Заглушка сигналов */}
-                {/* Стрелки для пагинации */}
+                {(day === 6 || day === 0) && <TradingNotification />}
+                {(day !== 6 && day !== 0) && <Carousel settings={itemRef} widthItem={299} speed="0.35s ease" />}
+                {(day !== 6 && day !== 0) && <TradingIdeasItem items={items} ref={itemRef} />}
+                {(day === 6 || day === 0) && <IdeasItemStub items={itemStub} />}
             </div>
         </div>
     );
