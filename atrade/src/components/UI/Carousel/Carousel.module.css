@@ -50,9 +50,10 @@
     position: absolute;
     left: -20px;
     top: 43%;
-    z-index: 1000;
     display: block;
     opacity: 0;
+    z-index: -1;
+    transition: all .1s linear;
 }
 
 .left_arrow.active {

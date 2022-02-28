@@ -18,6 +18,7 @@ const Carousel = ({ settings, widthItem, speed }) => {
         if (TotalWidth > -scrollRight) {
             leftArrow.current.style.opacity = "1"
             leftArrow.current.style.cursor = "pointer"
+            leftArrow.current.style.zIndex = "1000"
             settings.current.offsetParent.style.transform = `translate3d(${scrollRight}px, 0, 0)`
             setScrollRight(scrollRight - widthItem)
             setScrollLeft(scrollLeft + widthItem)
@@ -25,19 +26,23 @@ const Carousel = ({ settings, widthItem, speed }) => {
         if (TotalWidth - widthItem === -scrollRight) {
             e.currentTarget.style.opacity = "0"
             e.currentTarget.style.cursor = "default"
+            e.currentTarget.style.zIndex = "-1"
         } else if (TotalWidth === -scrollRight) {
             e.currentTarget.style.opacity = "0"
             e.currentTarget.style.cursor = "default"
+            e.currentTarget.style.zIndex = "-1"
         }
     }
 
     const onScrollLeft = (e) => {
         rightArrow.current.style.opacity = "1"
         rightArrow.current.style.cursor = "pointer"
+        rightArrow.current.style.zIndex = "1000"
         if (scrollLeft !== 0) {
             if (scrollLeft - widthItem === 0) {
                 e.currentTarget.style.opacity = "0"
                 e.currentTarget.style.cursor = "default"
+                e.currentTarget.style.zIndex = "-1"
             }
             settings.current.offsetParent.style.transform = `translate3d(${-scrollLeft + widthItem}px, 0, 0)`
             setScrollLeft(scrollLeft - widthItem)
