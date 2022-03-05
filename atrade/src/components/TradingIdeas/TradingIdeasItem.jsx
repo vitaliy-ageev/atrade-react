@@ -2,9 +2,8 @@ import React, {useEffect} from 'react';
 import classes from "../TradingIdeas/TradingIdeasItem.module.css";
 import EUR from "../../img/base/currency/svg/EUR/eur.svg";
 import IdeaItemChart from '../TradingIdeas/IdeaItemChart';
-import Modal from "../UI/Modal/Modal";
-import Login from "../../pages/Login";
 import {Link} from "react-router-dom";
+import ModalTradingIdeaItem from "./ModalTradingIdeaItem";
 
 const TradingIdeasItem = React.forwardRef(({ items }, ref) => {
     const [visibleModal, setVisibleModal] = React.useState(false)
@@ -14,11 +13,6 @@ const TradingIdeasItem = React.forwardRef(({ items }, ref) => {
     const getItem = async (item) => {
         setVisibleModal(true);
         setCurrItem(item)
-        document.body.classList.add('modal');
-        document.getElementById("html").classList.add('modal');
-        document.getElementById("header").classList.add('modal');
-        document.getElementById("header").style.top = window.pageYOffset + "px";
-        document.getElementById("main_page").classList.add('modal');
     }
 
     useEffect(() => {
@@ -26,7 +20,7 @@ const TradingIdeasItem = React.forwardRef(({ items }, ref) => {
         let href = window.location.search.split('=')[0];
         let id = window.location.search.match(new RegExp( '=([^&=]+)'));
         console.log(id)
-        if (href === "?id" && href[0] != "" && href[1] != null && id != null && href[1] != "" && id[1] != null && id[1] != '' && Number(id[1])) {
+        if (href === "?id" && href[0] !== "" && href[1] !== null && id !== null && href[1] !== "" && id[1] !== null && id[1] !== '' && Number(id[1])) {
             let item = {id: `${id[1]}`}
             getItem(item)
         }
@@ -36,7 +30,7 @@ const TradingIdeasItem = React.forwardRef(({ items }, ref) => {
         <>
             <div className={classes.ideas_carousel} >
                 {items.map(item =>
-                    <Link to={"/ideas/view?id=" + item.id} ref={ref} key={item.id} className={classes.ideas_item} onClick={() => getItem(item)} >
+                    <Link to={"/ideas/?id=" + item.id} ref={ref} key={item.id} className={classes.ideas_item} onClick={() => getItem(item)} >
                         <div className={classes.ideas_item_inner} >
                             {/* Просмтрено */}
                             {/* Активный */}
@@ -50,7 +44,7 @@ const TradingIdeasItem = React.forwardRef(({ items }, ref) => {
                                              :
                                              [classes.ideas_item_type, classes.sell].join(' ')
                                          }
-                                >{lang === "Rus" ? item.type_rus : item.type_eng}</div>
+                                >{lang === "Rus" ? item.type_rus : !lang ? item.type_rus : item.type_eng}</div>
                             </div>
                             <div className={classes.ideas_item_chart}>
                                 <IdeaItemChart svg_path={item.svg_path} id={item.id} type_id={item.type_id} />
@@ -59,9 +53,7 @@ const TradingIdeasItem = React.forwardRef(({ items }, ref) => {
                     </Link>
                 )}
             </div>
-            <Modal visibleModal={visibleModal} setVisibleModal={setVisibleModal} currItem={currItem}>
-
-            </Modal>
+            <ModalTradingIdeaItem visibleModal={visibleModal} setVisibleModal={setVisibleModal} currItem={currItem} />
         </>
     )
 })

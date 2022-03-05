@@ -1,11 +1,15 @@
 import React from 'react'
 import classes from "./Modal.module.css"
-import {Link, useLocation} from "react-router-dom";
 
-const Modal = ({visibleModal, setVisibleModal, currItem, children, ...props}) => {
+const Modal = ({visibleModal, setVisibleModal, children, ...props}) => {
     let rootClasses = [classes.modal]
     if (visibleModal) {
         rootClasses.push(classes.visible)
+        document.body.classList.add('modal');
+        document.getElementById("html").classList.add('modal');
+        document.getElementById("header").classList.add('modal');
+        document.getElementById("header").style.top = window.pageYOffset + "px";
+        document.getElementById("main_page").classList.add('modal');
     }
 
     let href = []
@@ -26,7 +30,7 @@ const Modal = ({visibleModal, setVisibleModal, currItem, children, ...props}) =>
     <div id="modal" className={rootClasses.join(' ')} onClick={onClickModalInner}>
           <div className={classes.modal_inner} onClick={(e) => e.stopPropagation()}>
             <h1>
-                {currItem.id}
+                {children}
             </h1>
         </div>
     </div>

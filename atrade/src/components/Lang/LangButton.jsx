@@ -19,7 +19,7 @@ const LangButton = ({ children, icon, setIcon, title, setTitle, setStyle, ...pro
     return (
         <div {...props} style={setStyle} className={classes.lang_button} onMouseEnter={isHover} onMouseLeave={() => setHover(false)}>
             <div className={classes.lang_button_name}>
-                {localStorage.getItem('lang') === "Rus" ? "Язык:" : "Lang:"}
+                {localStorage.getItem('lang') === "Rus" ? "Язык:" : !localStorage.getItem('lang') ? "Язык" : "Lang:"}
             </div>
 
             <div className={classes.lang_button_icon}>
