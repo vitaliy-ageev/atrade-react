@@ -1,0 +1,9 @@
+.close_icon {
+    cursor: pointer;
+    width: 27px;
+    height: 27px;
+    stroke: #ADADAD;
+    stroke-width: 25;
+    stroke-linecap: round;
+    transition: all .1s linear;
+}

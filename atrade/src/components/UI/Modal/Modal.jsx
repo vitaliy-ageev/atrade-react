@@ -28,10 +28,10 @@ const Modal = ({visibleModal, setVisibleModal, children, ...props}) => {
   return (
 
     <div id="modal" className={rootClasses.join(' ')} onClick={onClickModalInner}>
-          <div className={classes.modal_inner} onClick={(e) => e.stopPropagation()}>
-            <h1>
+        <div className={classes.modal_container}>
+            <div className={classes.modal_inner} onClick={(e) => e.stopPropagation()}>
                 {children}
-            </h1>
+            </div>
         </div>
     </div>
   )

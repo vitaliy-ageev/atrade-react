@@ -1,0 +1,33 @@
+.modal_trading_item_right_sidebar {
+    width: 25%;
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.modal_trading_item_right_sidebar_details {
+    width: 100%;
+    padding: 10px 0;
+    position: absolute;
+    top: 67px;
+    left: 0;
+}
+
+.modal_trading_item_right_sidebar_details_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.modal_trading_item_right_sidebar_close_icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}

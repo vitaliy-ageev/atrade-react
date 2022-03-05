@@ -1,0 +1,216 @@
+.modal_trading_item_main_content {
+    width: 75%;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    background: #fff;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.modal_trading_item_main_content_margin {
+    padding-left: 50px;
+    padding-right: 50px;
+    background: #fff;
+}
+
+.modal_trading_item_main_content_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/*Header*/
+.modal_trading_item_main_content_header {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.modal_trading_item_main_content_header_inner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.modal_trading_item_main_content_header_img {
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 24px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.modal_trading_item_main_content_header_name {
+    cursor: default;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(74, 74, 74, 1);
+}
+
+.modal_trading_item_main_content_header_route {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #fafafa;
+    padding: 3px 7px;
+    border-radius: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.modal_trading_item_main_content_header_route.sell {
+    background: #EF5351;
+}
+
+.modal_trading_item_main_content_header_route.buy {
+    background: #26A79A;
+}
+
+.modal_trading_item_main_content_header_route_text {
+    cursor: default;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.modal_trading_item_main_content_header_price {
+    cursor: default;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #4a4a4a;
+}
+
+.modal_trading_item_main_content_header_price.sell {
+    color: #EF5351;
+}
+
+.modal_trading_item_main_content_header_price.buy {
+    color: #26A79A;
+}
+
+
+/*Title*/
+.modal_trading_item_main_content_title {
+    cursor: default;
+    font-family: 'IBM Plex Serif', sans-serif;
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 700;
+    color: rgba(74, 74, 74, 1);
+    margin-bottom: 10px;
+}
+
+/*Text*/
+.modal_trading_item_main_content_text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    cursor: default;
+    font-family: 'IBM Plex Serif', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(74, 74, 74, 0.9);
+    margin-bottom: 20px;
+    -webkit-text-size-adjust:100%
+}
+
+.modal_trading_item_main_content_text p{
+    margin: 14px 0;
+}
+
+
+/*Screenshots*/
+.modal_trading_item_main_content_screenshots {
+    width: 100%;
+}
+
+.modal_trading_item_main_content_screenshots_inner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.modal_trading_item_main_content_screenshots_before {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: all .2s ease-in-out;
+}
+
+.modal_trading_item_main_content_screenshots_before_img {
+    cursor: pointer;
+    cursor: zoom-in;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #CCD6DD;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: all .1s linear;
+}
+
+.modal_trading_item_main_content_screenshots_after {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: all .2s ease-in-out;
+    margin-bottom: 5px;
+}
+
+.modal_trading_item_main_content_screenshots_after_img {
+    cursor: pointer;
+    cursor: zoom-in;
+    max-width: 100%;
+    height: auto;
+    border-left: 2px solid #CCD6DD;
+    border-right: 2px solid #CCD6DD;
+    border-bottom: 2px solid #CCD6DD;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all .1s linear;
+}
+
+/*Notification*/
+.modal_trading_item_main_content_notification {
+    width: 100%;
+    margin-top: 30px;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-left: 3px solid #2da98c;
+}
+
+.modal_trading_item_main_content_notification_text {
+    cursor: default;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: rgba(74, 74, 74, 0.9);
+    font-style: italic;
+    -webkit-text-size-adjust:100%;
+}
