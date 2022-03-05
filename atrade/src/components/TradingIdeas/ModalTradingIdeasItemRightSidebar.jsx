@@ -4,7 +4,15 @@ import Close from "../UI/Icons/Close/Close";
 
 const ModalTradingIdeasItemRightSidebar = ({visibleModal, setVisibleModal, currItem, ...props}) => {
     const onClickCloseIcon = () => {
+        let href = window.location.pathname.split('/')[1]
         setVisibleModal(false)
+        document.getElementById("modal").scrollTo(0,0)
+        document.body.classList.remove('modal');
+        document.getElementById("html").classList.remove('modal');
+        document.getElementById("header").classList.remove('modal');
+        document.getElementById("main_page").classList.remove('modal');
+        document.getElementById("header").style.top = "0px";
+        window.history.pushState(null, null, `/${href}`);
     }
 
     return (

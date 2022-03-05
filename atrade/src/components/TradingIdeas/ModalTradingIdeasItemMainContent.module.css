@@ -103,11 +103,11 @@
 /*Title*/
 .modal_trading_item_main_content_title {
     cursor: default;
-    font-family: 'IBM Plex Serif', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 30px;
-    line-height: 32px;
+    line-height: 37px;
     font-weight: 700;
-    color: rgba(74, 74, 74, 1);
+    color: #333;
     margin-bottom: 10px;
 }
 
@@ -120,7 +120,7 @@
     align-items: flex-start;
     cursor: default;
     font-family: 'IBM Plex Serif', sans-serif;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
     color: rgba(74, 74, 74, 0.9);
     margin-bottom: 20px;
