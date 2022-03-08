@@ -1,6 +1,5 @@
 import React from 'react';
 import classes from "./User.module.css"
-import UserIcon from "../UI/Icons/UserIcon/UserIcon"
 
 const User = () => {
 
@@ -15,8 +14,8 @@ const User = () => {
 
     return (
         <div className={classes.user} onMouseEnter={() => onHover(true)} onMouseLeave={() => onHover(false)}>
-            <div className={classes.user_name}>Виталий</div>
-            <UserIcon id="user_icon" />
+            <div className={classes.user_name}>Vitaliy</div>
+            <div className={classes.user_icon}>V</div>
         </div>
     );
 };

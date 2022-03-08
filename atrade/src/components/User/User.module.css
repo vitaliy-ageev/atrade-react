@@ -10,9 +10,9 @@
 
 .user_name {
     font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
-    color: #86888B;
+    color: #333;
     text-decoration: none;
     background: none;
     outline: none;
@@ -20,6 +20,17 @@
     transition: all .1s linear;
 }
 
-.user:hover .user_name {
-    color: #4a4a4a;
+.user_icon {
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 50%;
+    background: #2da98c;
+    color: #fff;
+    padding: 3px 10px;
+    border: 4px solid #fff;
+    transition: all .2s linear;
+}
+
+.user:hover .user_icon {
+    border: 4px solid #dcdcdc;
 }
