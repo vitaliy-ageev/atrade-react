@@ -6,7 +6,7 @@ import LangList from "./LangList";
 const Lang = ({ visible, setVisible }) => {
     const lang = localStorage.getItem('lang');
     const [items, setItems] = useState([
-        { id: "1", name: "Rus", icon: "Rus", title: "Язык:" },
+        { id: "1", name: "Рус", icon: "Rus", title: "Язык:" },
         { id: "2", name: "Eng", icon: "Eng", title: "Lang:" },
     ]);
 
