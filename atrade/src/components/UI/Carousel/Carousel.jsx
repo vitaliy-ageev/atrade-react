@@ -1,83 +1,38 @@
 import React from 'react'
 import classes from "./Carousel.module.css"
+import LeftArrowCarousel from "../Icons/Arrows/LeftArrowCarousel/LeftArrowCarousel";
+import RightArrowCarousel from "../Icons/Arrows/RightArrowCarousel/RightArrowCarousel";
 
-const Carousel = ({ settings, widthItem, speed }) => {
+const Carousel = React.forwardRef(({ settings, widthItem, speed, children, ...props }, ref) => {
     const leftArrow = React.useRef();
     const rightArrow = React.useRef();
-    const [totalScrollWidth, setTotalScrollWidth] = React.useState();
     const [scrollRight, setScrollRight] = React.useState(-widthItem);
     const [scrollLeft, setScrollLeft] = React.useState(0);
-    const TotalWidth = totalScrollWidth - (widthItem * 2);
-
-    React.useEffect(() => {
-        setTotalScrollWidth(settings.current.offsetLeft)
-    }, [settings])
-
-    const onScrollRight = (e) => {
-        settings.current.offsetParent.style.transition = `transform ${speed}`
-        if (TotalWidth > -scrollRight) {
-            leftArrow.current.style.opacity = "1"
-            leftArrow.current.style.cursor = "pointer"
-            leftArrow.current.style.zIndex = "1000"
-            settings.current.offsetParent.style.transform = `translate3d(${scrollRight}px, 0, 0)`
-            setScrollRight(scrollRight - widthItem)
-            setScrollLeft(scrollLeft + widthItem)
-        }
-        if (TotalWidth - widthItem === -scrollRight) {
-            e.currentTarget.style.opacity = "0"
-            e.currentTarget.style.cursor = "default"
-            e.currentTarget.style.zIndex = "-1"
-        } else if (TotalWidth === -scrollRight) {
-            e.currentTarget.style.opacity = "0"
-            e.currentTarget.style.cursor = "default"
-            e.currentTarget.style.zIndex = "-1"
-        }
-    }
-
-    const onScrollLeft = (e) => {
-        rightArrow.current.style.opacity = "1"
-        rightArrow.current.style.cursor = "pointer"
-        rightArrow.current.style.zIndex = "1000"
-        if (scrollLeft !== 0) {
-            if (scrollLeft - widthItem === 0) {
-                e.currentTarget.style.opacity = "0"
-                e.currentTarget.style.cursor = "default"
-                e.currentTarget.style.zIndex = "-1"
-            }
-            settings.current.offsetParent.style.transform = `translate3d(${-scrollLeft + widthItem}px, 0, 0)`
-            setScrollLeft(scrollLeft - widthItem)
-            setScrollRight(scrollRight + widthItem)
-        }
-    }
 
     return (
         <>
-            <div ref={leftArrow} className={classes.left_arrow} onClick={(e) => onScrollLeft(e)} >
-                <svg className={classes.left_arrow_icon} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 13">
-                    <title>Назад</title>
-                    <g data-name="Слой 2">
-                        <g id="icons">
-                            <g id="arrows">
-                                <polyline className={classes.left_arrow_style} points="1.5 1.5 6.5 6.5 1.5 11.5" />
-                            </g>
-                        </g>
-                    </g>
-                </svg>
-            </div>
-            <div ref={rightArrow} className={classes.right_arrow} onClick={(e) => onScrollRight(e)} >
-                <svg className={classes.right_arrow_icon} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 13">
-                    <title>Вперед</title>
-                    <g data-name="Слой 2">
-                        <g id="icons">
-                            <g id="arrows">
-                                <polyline className={classes.right_arrow_style} points="1.5 1.5 6.5 6.5 1.5 11.5" />
-                            </g>
-                        </g>
-                    </g>
-                </svg>
-            </div>
+            <LeftArrowCarousel ref={leftArrow}
+                               rightArrow={rightArrow}
+                               settings={settings}
+                               scrollRight={scrollRight}
+                               setScrollRight={setScrollRight}
+                               scrollLeft={scrollLeft}
+                               setScrollLeft={setScrollLeft}
+                               widthItem={widthItem}
+            />
+            {children}
+            <RightArrowCarousel ref={rightArrow}
+                                leftArrow={leftArrow}
+                                settings={settings}
+                                scrollRight={scrollRight}
+                                setScrollRight={setScrollRight}
+                                scrollLeft={scrollLeft}
+                                setScrollLeft={setScrollLeft}
+                                widthItem={widthItem}
+                                speed={speed}
+            />
         </>
     )
-}
+})
 
 export default Carousel

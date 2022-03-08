@@ -1,0 +1,32 @@
+.warning_risk {
+    cursor: default;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    color: #9DA3AB;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.warning_risk_text {
+    cursor: default;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    color: #9DA3AB;
+}
+
+.warning_risk_link {
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    color: #0A77E2;
+    text-decoration: none;
+    transition: all .1s linear;
+}
+
+.warning_risk_link:hover {
+    color: #2da98c;
+}

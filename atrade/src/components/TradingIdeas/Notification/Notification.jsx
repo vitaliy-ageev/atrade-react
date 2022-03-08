@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import classes from "./TradingNotification.module.css"
-import { IDEAS_NOTIFICATION } from "../../utils/ideas_notification"
+import classes from "./Notification.module.css"
+import { IDEAS_NOTIFICATION } from "../../../utils/ideas_notification"
 
-const TradingNotification = ({ ...props }) => {
+const Notification = ({ ...props }) => {
     const lang = localStorage.getItem('lang');
     const [notification, setNotification] = useState('');
     useEffect(() => {
@@ -26,4 +26,4 @@ const TradingNotification = ({ ...props }) => {
     )
 }
 
-export default TradingNotification
+export default Notification

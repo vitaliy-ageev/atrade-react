@@ -1,4 +1,4 @@
-.modal_trading_item_right_sidebar {
+.right_sidebar {
     width: 25%;
     display: block;
     box-sizing: border-box;
@@ -7,7 +7,7 @@
     border-bottom-right-radius: 2px;
 }
 
-.modal_trading_item_right_sidebar_details {
+.right_sidebar_details {
     width: 100%;
     padding: 10px 0;
     position: absolute;
@@ -15,14 +15,14 @@
     left: 0;
 }
 
-.modal_trading_item_right_sidebar_details_inner {
+.right_sidebar_details_inner {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
 
-.modal_trading_item_right_sidebar_close_icon {
+.right_sidebar_close_icon {
     position: absolute;
     top: 20px;
     right: 20px;

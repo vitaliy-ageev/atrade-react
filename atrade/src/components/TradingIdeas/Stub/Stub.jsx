@@ -1,7 +1,7 @@
 import React from 'react'
-import classes from "./IdeasItemStub.module.css"
+import classes from "./Stub.module.css"
 
-const IdeasItemStub = ({items}) => {
+const Stub = ({items}) => {
     return (
         <div className={classes.ideas_item_stub_container}>
             {items.map(item =>
@@ -29,4 +29,4 @@ const IdeasItemStub = ({items}) => {
     )
 }
 
-export default IdeasItemStub
+export default Stub

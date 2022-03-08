@@ -1,0 +1,20 @@
+.notification {
+    width: 100%;
+    margin-top: 30px;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-left: 3px solid #2da98c;
+}
+
+.notification_text {
+    cursor: default;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: italic;
+    color: rgba(74, 74, 74, 0.9);
+    -webkit-text-size-adjust:100%;
+}

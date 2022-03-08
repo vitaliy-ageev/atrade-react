@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from "./Modal.module.css"
 
-const Modal = ({visibleModal, setVisibleModal, children, ...props}) => {
+const Modal = ({visibleModal, setVisibleModal, children}) => {
     let rootClasses = [classes.modal]
     if (visibleModal) {
         rootClasses.push(classes.visible)
@@ -12,10 +12,9 @@ const Modal = ({visibleModal, setVisibleModal, children, ...props}) => {
         document.getElementById("main_page").classList.add('modal');
     }
 
-    let href = []
     const onClickModalInner = () => {
-        href = window.location.pathname.split('/')[1]
         setVisibleModal(false)
+        let href = window.location.pathname.split('/')[1]
         document.getElementById("modal").scrollTo(0,0)
         document.body.classList.remove('modal');
         document.getElementById("html").classList.remove('modal');

@@ -27,6 +27,7 @@ const Ideas = () => {
                 <MainTitle title={title.title}>
                     <SubNavigation items={navigations} />
                 </MainTitle>
+                {/*Trading Ideas*/}
                 <TradingIdeas />
             </Main>
             <Footer onClick={onClickFooter} />

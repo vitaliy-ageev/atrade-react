@@ -1,0 +1,42 @@
+.left_arrow {
+    cursor: default;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #fff;
+    -webkit-box-shadow: 0 4px 6px 0 rgba(0,0,0,0.05), 0 1px 0 1px rgba(0,0,0,0.05), 0 0 0 1px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,0.05), 0 1px 0 1px rgba(0,0,0,0.05), 0 0 0 1px rgba(0,0,0,0.05);
+    position: absolute;
+    left: -20px;
+    top: 43%;
+    display: block;
+    opacity: 0;
+    z-index: -1;
+    transition: all .1s linear;
+}
+
+.left_arrow.active {
+    display: block;
+}
+
+.left_arrow_icon {
+    width: 17px;
+    height: 17px;
+    transition: all .1s linear;
+    margin-top: 14px;
+    margin-left: 12px;
+    transform: rotate(180deg);
+}
+
+.left_arrow_style {
+    fill: none;
+    stroke: #666666;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2.2px;
+    transition: all .1s linear;
+}
+
+.left_arrow:hover .left_arrow_style {
+    stroke: #000;
+}

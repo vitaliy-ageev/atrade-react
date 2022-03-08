@@ -1,0 +1,10 @@
+.clip_icon {
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+    opacity: 0;
+    fill: #333;
+    stroke: #333;
+    stroke-width: .4;
+    transition: all .2s linear;
+}
