@@ -1,0 +1,8 @@
+.user_icon {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    fill: #86888B;
+    stroke-width: 30;
+    transition: all .1s linear;
+}

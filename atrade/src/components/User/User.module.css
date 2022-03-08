@@ -1,0 +1,25 @@
+.user {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 50px;
+    transition: all .1s linear;
+}
+
+.user_name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #86888B;
+    text-decoration: none;
+    background: none;
+    outline: none;
+    margin-right: 10px;
+    transition: all .1s linear;
+}
+
+.user:hover .user_name {
+    color: #4a4a4a;
+}

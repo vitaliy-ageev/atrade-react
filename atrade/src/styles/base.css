@@ -167,7 +167,7 @@ body.modal {
 #price_block::before {
     position: absolute;
     top: 90%;
-    left: -8%;
+    left: -2%;
     z-index: 12;
     border-radius: 4px;
     content: attr(aria-label);
@@ -183,7 +183,7 @@ body.modal {
 #price_block::before, #price_block::after {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 500;
     opacity: 0;
     pointer-events: none;
@@ -218,7 +218,7 @@ body.modal {
 #take_profit_block::before {
     position: absolute;
     top: 90%;
-    left: -8%;
+    left: -2%;
     z-index: 12;
     border-radius: 4px;
     content: attr(aria-label);
@@ -234,7 +234,7 @@ body.modal {
 #take_profit_block::before, #take_profit_block::after {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 500;
     opacity: 0;
     pointer-events: none;
@@ -254,6 +254,8 @@ body.modal {
     top: 85%;
 }
 
+
+
 /* Tooltip Copy Success */
 #stop_loss_block:hover #stop_loss_clip {
     opacity: 1;
@@ -269,7 +271,7 @@ body.modal {
 #stop_loss_block::before {
     position: absolute;
     top: 90%;
-    left: -8%;
+    left: -2%;
     z-index: 12;
     border-radius: 4px;
     content: attr(aria-label);
@@ -284,7 +286,7 @@ body.modal {
 #stop_loss_block::before, #stop_loss_block::after {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 500;
     opacity: 0;
     pointer-events: none;
