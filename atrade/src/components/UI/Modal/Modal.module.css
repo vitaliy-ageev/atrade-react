@@ -28,7 +28,7 @@
 .modal_inner {
     cursor: default;
     width: 100%;
-    height: auto;
+    height: 100%;
     margin: 60px 0;
     background: #fafafa;
     border-radius: 2px;

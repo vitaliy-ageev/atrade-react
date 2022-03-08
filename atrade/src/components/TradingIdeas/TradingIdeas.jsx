@@ -24,7 +24,7 @@ const TradingIdeas = (props) => {
             work_status: "",
             close_status: "",
             cancel_status: "",
-            result_price: "1.18750",
+            result_price: "",
             screen: "",
             scree_text: "",
             price: "1.18960",

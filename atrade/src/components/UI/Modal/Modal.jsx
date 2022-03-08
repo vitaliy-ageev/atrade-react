@@ -28,7 +28,7 @@ const Modal = ({visibleModal, setVisibleModal, children}) => {
 
     <div id="modal" className={rootClasses.join(' ')} onClick={onClickModalInner}>
         <div className={classes.modal_container}>
-            <div className={classes.modal_inner} onClick={(e) => e.stopPropagation()}>
+            <div id='modal_inner' className={classes.modal_inner} onClick={(e) => e.stopPropagation()}>
                 {children}
             </div>
         </div>

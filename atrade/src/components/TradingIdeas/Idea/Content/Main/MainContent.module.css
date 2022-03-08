@@ -1,5 +1,6 @@
 .main_content {
     width: 75%;
+    min-height: 700px;
     padding-top: 30px;
     padding-bottom: 40px;
     background: #fff;

@@ -99,55 +99,56 @@ body.modal {
 
 /*===========*/
 #status::before {
-    width: 200px;
-    left: 10px;
-    bottom: -40px;
-}
-
-#tooltip:hover #status::before {
+    width: 220px;
     left: 10px;
     bottom: -50px;
 }
 
+#tooltip:hover #status::before {
+    left: 10px;
+    bottom: -60px;
+}
+
 /*===========*/
 #price::before {
-    bottom: -10px;
+    width: 140px;
+    bottom: -15px;
     left: 15px;;
 }
 
 #tooltip:hover #price::before {
-    bottom: -10px;
+    bottom: -15px;
     left: 10px;
 }
 /*===========*/
 #take_profit::before {
-    bottom: -20px;
+    bottom: -40px;
     left: 15px;
 }
 
 #tooltip:hover #take_profit::before {
-    bottom: -20px;
+    bottom: -40px;
     left: 10px;
 }
 /*===========*/
 #stop_loss::before {
-    bottom: -20px;
+    bottom: -35px;
     left: 15px;
 }
 
 #tooltip:hover #stop_loss::before {
-    bottom: -20px;
+    bottom: -35px;
     left: 10px;
 }
 
 /*===========*/
 #risk::before {
-    bottom: -10px;
+    bottom: -20px;
     left: 15px;
 }
 
 #tooltip:hover #risk::before {
-    bottom: -10px;
+    bottom: -20px;
     left: 10px;
 }
 
