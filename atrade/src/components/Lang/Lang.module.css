@@ -1,8 +1,11 @@
 .lang {
+    padding: 10px 15px;
+    background: #fff;
     cursor: pointer;
     display: block;
-    margin-right: 50px;
-    position: relative;
+    position: absolute;
+    right: -40px;
+    top: 70px;
 }
 
 .lang_inner {

@@ -12,7 +12,7 @@
 .warning_risk_text {
     cursor: default;
     font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 400;
     color: #9DA3AB;
 }
@@ -20,7 +20,7 @@
 .warning_risk_link {
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 400;
     color: #0A77E2;
     text-decoration: none;

@@ -8,6 +8,7 @@ import TradingIdeas from "../components/TradingIdeas/TradingIdeas";
 import { LangContext } from '../context/LangContext';
 import { TITLE } from "../utils/title";
 import { SUBNAVIGATION } from "../utils/subnavigation";
+import Lang from "../components/Lang/Lang";
 
 const Ideas = () => {
     const [title, setTitle] = useState('');
@@ -24,6 +25,7 @@ const Ideas = () => {
         <div className="App">
             <Header visible={visible} setVisible={setVisible} onClick={onClickHeader} />
             <Main onClick={onClickMain}>
+                <Lang />
                 <MainTitle title={title.title}>
                     <SubNavigation items={navigations} />
                 </MainTitle>

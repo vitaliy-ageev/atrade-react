@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from "./Main.module.css";
+import Lang from "../../components/Lang/Lang";
 
 const Main = ({children, ...props}) => {
     return (

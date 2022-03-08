@@ -309,6 +309,7 @@ body.modal {
 /*===========*/
 @media (min-width: 1280px) {
     .container {
+        position: relative;
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
