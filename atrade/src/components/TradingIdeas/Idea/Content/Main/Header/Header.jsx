@@ -24,9 +24,9 @@ const Header = ({currentIdea}) => {
         }
     } else if ((!currentLang && systemLang === "ru-RU") || currentLang === "Rus") {
         if (currentIdea.type_id === "1") {
-            text = "Длинная"
+            text = "Покупка"
         } else if (currentIdea.type_id === "2") {
-            text = "Короткая"
+            text = "Продажа"
         }
     }
 
