@@ -1,8 +1,7 @@
 .main_content {
-    width: 75%;
+    width: 100%;
     min-height: 700px;
     padding-top: 30px;
-    padding-bottom: 40px;
     background: #fff;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;

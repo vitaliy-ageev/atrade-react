@@ -1,9 +1,13 @@
 .title {
     cursor: default;
     font-family: 'Open Sans', sans-serif;
+    /*font-family: 'IBM Plex Serif', sans-serif;*/
     font-size: 30px;
-    line-height: 37px;
-    font-weight: 700;
+    font-size: 20px;
+    /*line-height: 37px;*/
+    font-weight: 400;
     color: #333;
+    color: rgba(74, 74, 74, 0.9);
+    /*display: none;*/
     margin-bottom: 10px;
 }
