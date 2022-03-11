@@ -25,7 +25,6 @@ const Content = ({currentIdea, visibleModal, setVisibleModal}) => {
                     <Close />
                 </div>
                 <MainContent currentIdea={currentIdea}/>
-                {/*<RightSidebar setVisibleModal={setVisibleModal} currentIdea={currentIdea} />*/}
             </div>
         </Modal>
     );
