@@ -28,15 +28,15 @@ const Chart = ({ initialData, barsData, isTrue }) => {
                 crosshair: {
                     mode: 0,
                     vertLine: {
-                        visible: true,
+                        visible: false,
                         width: 1,
                         color: 'rgba(0, 0, 0, 0.2)',
                         style: 0,
-                        labelVisible: true,
+                        labelVisible: false,
                     },
                     horzLine: {
-                        visible: true,
-                        labelVisible: true,
+                        visible: false,
+                        labelVisible: false,
                         width: 1,
                         color: 'rgba(0, 0, 0, 0.2)',
                         style: 0,
@@ -122,9 +122,9 @@ const Chart = ({ initialData, barsData, isTrue }) => {
 
                 const currentPrice = {
                     price: 1.115,
-                    color: 'rgba(38, 167, 154, 0)',
+                    color: 'rgba(38, 167, 154, 1)',
                     // color: 'rgba(0,0,0,0)',
-                    lineWidth: '2',
+                    lineWidth: '1',
                     lineStyle: LineStyle.Dashed,
                     axisLabelVisible: true,
                     title: 'Покупка',
@@ -133,9 +133,9 @@ const Chart = ({ initialData, barsData, isTrue }) => {
                 const takeProfit = {
                     price: 1.135,
                     // color: 'rgba(43, 92, 250, 0)',
-                    color: 'rgba(38, 167, 154, 0)',
+                    color: 'rgba(38, 167, 154, 1)',
                     // color: 'rgba(0,0,0,0)',
-                    lineWidth: '2',
+                    lineWidth: '1',
                     lineStyle: LineStyle.Dashed,
                     axisLabelVisible: true,
                     title: 'Цель',
@@ -143,9 +143,9 @@ const Chart = ({ initialData, barsData, isTrue }) => {
 
                 const stopLoss = {
                     price: 1.08495,
-                    color: 'rgba(247, 40, 40, 0)',
+                    color: 'rgba(247, 40, 40, 1)',
                     // color: 'rgba(0,0,0,0)',
-                    lineWidth: '2',
+                    lineWidth: '1',
                     lineStyle: LineStyle.Dashed,
                     axisLabelVisible: true,
                     title: 'Стоп',
@@ -178,9 +178,9 @@ const Chart = ({ initialData, barsData, isTrue }) => {
 
                 const currentPrice = {
                     price: 1.115,
-                    color: 'rgba(38, 167, 154, 0)',
+                    color: 'rgba(38, 167, 154, 1)',
                     // color: 'rgba(0,0,0,0)',
-                    lineWidth: '2',
+                    lineWidth: '1',
                     lineStyle: LineStyle.Dashed,
                     axisLabelVisible: true,
                     title: 'Покупка',
@@ -189,9 +189,9 @@ const Chart = ({ initialData, barsData, isTrue }) => {
                 const takeProfit = {
                     price: 1.135,
                     // color: 'rgba(43, 92, 250, 0)',
-                    color: 'rgba(38, 167, 154, 0)',
+                    color: 'rgba(38, 167, 154, 1)',
                     // color: 'rgba(0,0,0,0)',
-                    lineWidth: '2',
+                    lineWidth: '1',
                     lineStyle: LineStyle.Dashed,
                     axisLabelVisible: true,
                     title: 'Цель',
@@ -199,9 +199,9 @@ const Chart = ({ initialData, barsData, isTrue }) => {
 
                 const stopLoss = {
                     price: 1.08495,
-                    color: 'rgba(247, 40, 40, 0)',
+                    color: 'rgba(247, 40, 40, 1)',
                     // color: 'rgba(0,0,0,0)',
-                    lineWidth: '2',
+                    lineWidth: '1',
                     lineStyle: LineStyle.Dashed,
                     axisLabelVisible: true,
                     title: 'Стоп',
