@@ -63,8 +63,8 @@ const Chart = ({ initialData, barsData, isTrue }) => {
                 },
                 timeScale: {
                     visible: true,
-                    // fixLeftEdge: true,
-                    // fixRightEdge: true,
+                    fixLeftEdge: true,
+                    fixRightEdge: true,
                     rightOffset: 2.5,
                     borderColor: 'rgba(0,0,0, 0)',
 
@@ -210,7 +210,6 @@ const Chart = ({ initialData, barsData, isTrue }) => {
                 newSeries.createPriceLine(stopLoss);
                 newSeries.createPriceLine(takeProfit);
                 newSeries.createPriceLine(currentPrice);
-
             }
 
 

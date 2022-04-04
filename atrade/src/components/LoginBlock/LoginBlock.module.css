@@ -1,0 +1,12 @@
+.login_block {
+    width: 400px;
+    margin: 0;
+    padding: 40px 0;
+    background: #fff;
+    z-index: 3;
+}
+
+.login_block_inner {
+    max-width: 340px;
+    margin: 0 auto;
+}
