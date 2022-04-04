@@ -29,16 +29,16 @@ const Chart = ({ initialData, barsData, isTrue }) => {
                     mode: 0,
                     vertLine: {
                         visible: false,
-                        width: 1,
-                        color: 'rgba(0, 0, 0, 0.2)',
-                        style: 0,
                         labelVisible: false,
+                        width: 1,
+                        color: 'rgba(0, 0, 0, 0.1)',
+                        style: 0,
                     },
                     horzLine: {
                         visible: false,
                         labelVisible: false,
                         width: 1,
-                        color: 'rgba(0, 0, 0, 0.2)',
+                        color: 'rgba(0, 0, 0, 0.1)',
                         style: 0,
                     },
                 },
@@ -63,8 +63,8 @@ const Chart = ({ initialData, barsData, isTrue }) => {
                 },
                 timeScale: {
                     visible: true,
-                    // fixLeftEdge: true,
-                    // fixRightEdge: true,
+                    fixLeftEdge: true,
+                    fixRightEdge: true,
                     rightOffset: 2.5,
                     borderColor: 'rgba(0,0,0, 0)',
 

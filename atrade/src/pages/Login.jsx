@@ -1,8 +1,11 @@
 import React from 'react'
+import Main from '../widgets/Main/Main'
 
 const Login = () => {
   return (
-    <div>Login</div>
+    <Main>
+      <h1>Login</h1>
+    </Main>
   )
 }
 

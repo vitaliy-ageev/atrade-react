@@ -358,15 +358,12 @@ const TradingIdeas = (props) => {
     return (
         <div className={classes.ideas}>
             <div className={classes.ideas_inner}>
-                {/*Trading Ideas in Carousel*/}
                 {(day !== 6 && day !== 0) &&
-                <Carousel settings={ideaRef} widthItem={299} speed="0.35s ease" >
-                    <Idea ideas={ideas} ref={ideaRef} />
-                </Carousel>
+                    <Carousel settings={ideaRef} widthItem={299} speed="0.35s ease" >
+                        <Idea ideas={ideas} ref={ideaRef} />
+                    </Carousel>
                 }
-                {/*Trading Ideas Notification*/}
                 {(day === 6 || day === 0) && <Notification />}
-                {/*Trading Ideas Stub*/}
                 {(day === 6 || day === 0) && <Stub items={itemStub} />}
             </div>
         </div>
