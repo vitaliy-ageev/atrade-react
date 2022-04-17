@@ -1,0 +1,30 @@
+.separator {
+    margin-bottom: 34px;
+    padding-top: 6px;
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.separator::before {
+    background-color: #cecece;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 19px;
+}
+
+.separator_text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #787b86;
+    display: inline-block;
+    padding: 0 15px;
+    position: relative;
+}

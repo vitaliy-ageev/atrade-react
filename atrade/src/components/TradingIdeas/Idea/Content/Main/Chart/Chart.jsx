@@ -210,7 +210,6 @@ const Chart = ({ initialData, barsData, isTrue }) => {
                 newSeries.createPriceLine(stopLoss);
                 newSeries.createPriceLine(takeProfit);
                 newSeries.createPriceLine(currentPrice);
-
             }
 
 

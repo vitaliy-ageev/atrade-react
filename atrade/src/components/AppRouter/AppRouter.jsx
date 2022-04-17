@@ -4,7 +4,7 @@ import { publicRoutes, privateRoutes } from '../../routes/routes';
 
 const AppRouter = () => {
 
-  const isAuth = true;
+  const isAuth = false;
 
   return (
     isAuth

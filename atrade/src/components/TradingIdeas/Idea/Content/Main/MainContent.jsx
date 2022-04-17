@@ -113,7 +113,6 @@ const MainContent = ({ currentIdea }) => {
             <div className={classes.main_content_margin}>
                 <div className={classes.main_content_container}>
                     <Header currentIdea={currentIdea} />
-                    {/*<Title currentIdea={currentIdea} />*/}
                     <Chart initialData={initialData} barsData={barsData} isTrue={false} />
                     <Text currentIdea={currentIdea} />
                 </div>
